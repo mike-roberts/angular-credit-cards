@@ -1,0 +1,26 @@
+{
+  "name": "angular-credit-cards",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mike-roberts/angular-credit-cards"
+  },
+  "author": {
+    "name": "Mike Roberts",
+    "email": "mikerobertsproductions@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mike-roberts/angular-credit-cards/issues"
+  },
+  "module": "angular-credit-cards.js",
+  "typings": "angular-credit-cards.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
