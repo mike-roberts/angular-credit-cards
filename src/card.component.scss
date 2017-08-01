@@ -1,0 +1,89 @@
+.card {
+  background-repeat: none;
+  background-size: cover;
+  width:75vw;
+  height:47.25vw;
+  margin:2.5vw auto;
+  border-radius: 2.65vw;
+  position: relative;
+  font-family: 'Inconsolata', monospace;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+}
+.card__number, .card__name, .card__exp-date {
+  color: #fff;
+  text-shadow: 1px 1px 0 black, -1px 1px 0 black;
+}
+.card__number {
+  font-size: 5vw;
+  letter-spacing: 0;
+  text-align: center;
+  padding-top: 25vw;
+}
+.card__number span {
+  margin-right: 1.3vw;
+  }
+.card__number span:last-child {
+  margin-right: 0;
+}
+.card__name { 
+  text-transform: uppercase;
+  font-size: 3.8vw;
+  position: absolute;
+  bottom: 5vw;
+  left: 5vw;
+}
+.card__debit, .card__exp-text {
+  color: black;
+  font-family: Arial, 'sans-serif';
+  text-transform: uppercase;
+  text-align: right;
+  text-shadow: 0.5px 0.5px 0px white, -0.5px -0.5px 0 white;
+}
+.card__debit {
+  font-size: 3.5vw;
+}
+.debit__mc {
+  text-transform: lowercase;
+  position: absolute;
+  top: 22.5vw;
+  right: 8vw;
+}
+.debit__visa {
+  position: absolute;
+  right: 2vw;
+  bottom: 12vw;
+}
+.card__exp-text {
+  font-size: 1.5vw;
+  position: absolute;
+  left: 30vw;
+  bottom: 9vw;
+}
+.card__exp-date {
+  font-size: 3.8vw;
+  position: absolute;
+  bottom: 8.5vw;
+  left: 35vw;
+}
+.card__logo {
+  background: white;
+  position: absolute;
+}
+.logo__mc {
+  bottom: 0;
+  right: 3vw;
+  padding: 2vw 2vw 1.5vw 2vw;
+}
+.logo__mc svg {
+  width: 15vw;
+  height: auto;
+}
+.logo__visa {
+  padding: 1.5vw 1.5vw 1vw 1.5vw;
+  bottom: 2vw;
+  right: 2vw
+}
+.logo__visa svg {
+  width: 15vw;
+  height: auto;
+}

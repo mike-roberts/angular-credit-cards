@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'angular-credit-cards';
+import { CreditCardModule } from 'angular-credit-cards';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SampleModule } from 'angular-credit-cards';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    CreditCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -50,7 +50,29 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<credit-card
+  [cardData]="cardData"></credit-card>
+```
+
+```ts
+// app.component.ts
+import { Component } from '@angular/core'
+// import the Model
+import { CardData } from 'angular-credit-cards';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html'
+})
+export class AppComponent {
+  cardData: CardData = {
+    network: 'visa',
+    last4: 1234,
+    name: 'John Doe',
+    expDate: '12/21',
+    background: 'https://url.to.background.image'
+  }
+}
 ```
 
 ## Development
